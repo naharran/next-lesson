@@ -2,7 +2,7 @@ import db from '../utils/firebase'; // Importing Firestore instance
 import { doc, getDoc } from 'firebase/firestore';
 
 export async function getStaticProps() {
-    const docRef = doc(db, "Products", "1");
+    const docRef = doc(db, "Products", "2");
     const docSnap = await getDoc(docRef);
 
     if (!docSnap.exists()) {
